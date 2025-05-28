@@ -19,8 +19,53 @@
   }
 }
 
+/* globals.css */
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
+}
+
+h1, h2 {
+  font-family: var(--font-playfair);
+}
+
+p, a {
+  font-family: var(--font-open-sans);
+}
+
+.label {
+  font-family: var(--font-lato);
+}
+
+.quote {
+  font-family: var(--font-cormorant);
+}
+
+ul{
+  display: flex
+;
+    list-style: none;
+    gap: 30px
+}
+
+li a:hover {
+  color: #5e3370;
+}
+/* global.css */
+body.menu-open {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+          .desktop-nav {
+            display: none !important;
+          }
+        }
+
+/* In your globals.css */
+@font-face {
+  font-family: "PeaceSans";
+  src: url("/fonts/peace_sans/PeaceSans.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
