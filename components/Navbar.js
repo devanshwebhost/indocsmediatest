@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,10 +17,10 @@ const Navbar = () => {
 
       {/* Desktop Navigation */}
       <ul className=" desktop-nav gap-8 text-white font-medium">
-        <li><a href="/" className="hover:text-[#5e3370]">Home</a></li>
-        <li><a href="/about" className="hover:text-[#5e3370]">About</a></li>
-        <li><a href="/services" className="hover:text-[#5e3370]">Services</a></li>
-        <li><a href="/contact" className="hover:text-[#5e3370]">Contact</a></li>
+        <li><Link href="/" className="hover:text-[#5e3370]">Home</Link></li>
+        <li><Link href="/about" className="hover:text-[#5e3370]">About</Link></li>
+        <li><Link href="/services" className="hover:text-[#5e3370]">Services</Link></li>
+        <li><Link href="/contact" className="hover:text-[#5e3370]">Contact</Link></li>
       </ul>
 
       {/* Mobile Hamburger Icon */}
@@ -42,10 +43,10 @@ const Navbar = () => {
         </div>
 
         <ul className="flex flex-col items-start gap-6 px-6 mt-8 text-lg">
-          <li><a href="/" className="hover:text-[#5e3370]" onClick={() => setMenuOpen(false)}>Home</a></li>
-          <li><a href="/about" className="hover:text-[#5e3370]" onClick={() => setMenuOpen(false)}>About</a></li>
-          <li><a href="/services" className="hover:text-[#5e3370]" onClick={() => setMenuOpen(false)}>Services</a></li>
-          <li><a href="/contact" className="hover:text-[#5e3370]" onClick={() => setMenuOpen(false)}>Contact</a></li>
+          <li><Link href="/" className="hover:text-[#5e3370]" onClick={() => setMenuOpen(false)}>Home</Link></li>
+          <li><Link href="/about" className="hover:text-[#5e3370]" onClick={() => setMenuOpen(false)}>About</Link></li>
+          <li><Link href="/services" className="hover:text-[#5e3370]" onClick={() => setMenuOpen(false)}>Services</Link></li>
+          <li><Link href="/contact" className="hover:text-[#5e3370]" onClick={() => setMenuOpen(false)}>Contact</Link></li>
         </ul>
       </div>
 
