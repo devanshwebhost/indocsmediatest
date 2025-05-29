@@ -3,11 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-  "dev": "next dev --no-lint",
-  "build": "next build",
-  "start": "next start"
-}
-
+    "dev": "next dev --no-lint",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
